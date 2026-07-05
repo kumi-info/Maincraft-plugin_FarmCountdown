@@ -1,0 +1,16 @@
+name: FarmCountdown
+version: '1.7.0'
+main: com.liverecord.farmcountdown.FarmCountdownPlugin
+api-version: '1.21'
+author: LiveRecord
+description: 's2e-farm-pro のカウントダウン秒数を実行中タイマーへのリフレクションで上書きする(実験的)'
+softdepend: [s2e-farm-pro]
+commands:
+  farmcountdown:
+    description: 'farm-pro のカウントダウン秒数を変更'
+    usage: '/farmcountdown <秒> | off | status | reload'
+    permission: farmcountdown.use
+permissions:
+  farmcountdown.use:
+    description: 'farmcountdown の操作権限'
+    default: op
